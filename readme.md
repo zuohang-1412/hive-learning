@@ -104,7 +104,7 @@
 2) 进入hive客户端，添加jar包：hive>add jar target/hive-learning-1.0-SNAPSHOT.jar;
 3) 创建临时函数：hive> CREATE TEMPORARY FUNCTION myudf AS 'org.example.MyUDF';
 4) 查询HQL语句：hive> SELECT myudf(name) from table_name;
-5) 销毁临时函数：hive>
+5) 销毁临时函数：hive> drop temporary function myudf
 
 ### 持久函数
 
