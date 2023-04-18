@@ -197,8 +197,16 @@
     2) 行存储：textFile、sequenceFile
     3) 列存储：ORC、parquet
 
+### hive 将 sql 查询转化成为 mapreduce 作业的过程
+1) 输入sql 
+2) parser：将SQL 妆化成为抽象语法树 
+3) Semantic Analyzer：将抽象语法树转化成查询块 
+4) Logical Plan Generator：将查询模块转化成逻辑查询计划 
+5) Logical optimize： 重写逻辑查询计划 
+6) Physical Plan Generator：将逻辑查询计划转成物理计划
+7) Physical Optimizer： 选择最佳的优化查询策略
+8) 输出结果
+
 ## SQL解析工具
-
 ### calcite
-
 ### ANTLR
